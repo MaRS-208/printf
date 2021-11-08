@@ -15,6 +15,8 @@ int select_f(char c, va_list *list)
 			return (_putchar(va_arg(*list, int)));
 		case 's':
 			return (print_string(va_arg(*list, char *)));
+		case 'd':
+			return (print_int(va_arg(*list, int)));
 		case 'i':
 			return (print_int(va_arg(*list, int)));
 		case '%':
