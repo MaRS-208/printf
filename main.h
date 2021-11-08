@@ -8,5 +8,6 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(char *s);
 int print_int(int n);
+int int_to_bin(int k);
 
 #endif

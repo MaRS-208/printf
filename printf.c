@@ -21,6 +21,8 @@ int select_f(char c, va_list *list)
 			return (print_int(va_arg(*list, int)));
 		case '%':
 			return (_putchar('%'));
+		case 'b':
+			return (int_to_bin(va_arg(*list, int)));
 	}
 	return (0);
 }
