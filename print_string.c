@@ -8,7 +8,7 @@
 int print_string(char *s)
 {
 	if (!s)
-		return(print_string("(nil)"))
+		return (print_string("(nil)"));
 	if (*s == 0)
 	{
 		return (0);
