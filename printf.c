@@ -35,6 +35,8 @@ int select_f(char c, va_list *list)
 			return (print_reverse(va_arg(*list, char *)));
 		case 'R':
 			return (print_rot13(va_arg(*list, char *)));
+		case 'S':
+			return (printString(va_arg(*list, char *)));
 	}
 	return (0);
 }

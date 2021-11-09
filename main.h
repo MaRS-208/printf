@@ -15,6 +15,6 @@ int print_lowhex(int n);
 int print_uphex(int n);
 int print_reverse(char *s);
 int print_rot13(char *s);
-
+int printString(char *s);
 
 #endif
