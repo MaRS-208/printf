@@ -2,5 +2,5 @@
 
 int print_rot13(char *s)
 {
-	return (1);
+	return (*s);
 }

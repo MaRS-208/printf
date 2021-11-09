@@ -2,5 +2,5 @@
 
 int print_lowhex(int n)
 {
-	return (1);
+	return (n);
 }

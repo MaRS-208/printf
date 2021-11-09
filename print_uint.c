@@ -2,5 +2,5 @@
 
 int print_uint(unsigned int n)
 {
-	return (1);
+	return (n);
 }

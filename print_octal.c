@@ -2,5 +2,5 @@
 
 int print_octal(int n)
 {
-	return (1);
+	return (n);
 }
