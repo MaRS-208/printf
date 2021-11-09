@@ -49,42 +49,43 @@ int print_rot13(char *s)
 {
 	int cont = 0;
 	char z;
+	static int rot = 13;
 
 	if (!s)
 		return (-1);
 	if (*s == 0)
 		return (0);
-		else if (*s >= 'A' && *s <= 'Z')
-		{
-			if (*s + 13 <= 'Z')
-			{
-				z = *s;
-				csupport(z, cont);
-			}
-			else
-			{
-				z = *s - 13;
-				csupport(z, cont);
-			}
-		}
-		else if (*s >= 'a' && *s <= 'z')
-		{
-			if (*s + 13 <= 'z')
-			{
-				z = *s;
-				csupport(z, cont);
-			}
-			else
-			{
-				z = *s - 13;
-				csupport(z, cont);
-			}
-		}
-		else
+	else if (*s >= 'A' && *s <= 'Z')
+	{
+		if (*s + rot <= 'Z')
 		{
 			z = *s;
 			csupport(z, cont);
 		}
+		else
+		{
+			z = *s - rot;
+			csupport(z, cont);
+		}
+	}
+	else if (*s >= 'a' && *s <= 'z')
+	{
+		if (*s + rot <= 'z')
+		{
+			z = *s;
+			csupport(z, cont);
+		}
+		else
+		{
+			z = *s - rot;
+			csupport(z, cont);
+		}
+	}
+	else
+	{
+		z = *s;
+		csupport(z, cont);
+	}
 	return (cont);
 }
 
