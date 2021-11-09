@@ -16,7 +16,7 @@ int select_f(char c, va_list *list)
 		case 's':
 			return (print_string(va_arg(*list, char *)));
 		case 'd':
-			return (print_int(va_arg(*list, int)));
+			return (print_int((long int)va_arg(*list, int)));
 		case 'i':
 			return (print_int(va_arg(*list, int)));
 		case '%':
@@ -38,7 +38,9 @@ int select_f(char c, va_list *list)
 		case 'S':
 			return (printString(va_arg(*list, char *)));
 	}
-	return (0);
+	_putchar('%');
+	_putchar(c);
+	return (2);
 }
 /**
  * _printf - printf
@@ -71,5 +73,7 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(list);
+	if (flag)
+		return (-1);
 	return (out);
 }
