@@ -23,6 +23,18 @@ int select_f(char c, va_list *list)
 			return (_putchar('%'));
 		case 'b':
 			return (int_to_bin(va_arg(*list, int)));
+		case 'u':
+			return (print_uint(va_arg(*list, unsigned int)));
+		case 'o':
+			return (print_octal(va_arg(*list, int)));
+		case 'x':
+			return (print_lowhex(va_arg(*list, int)));
+		case 'X':
+			return (print_uphex(va_arg(*list, int)));
+		case 'r':
+			return (print_reverse(va_arg(*list, int)));
+		case 'R':
+			return (print_rot13(va_arg(*list, int)));
 	}
 	return (0);
 }
