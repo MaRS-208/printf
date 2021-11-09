@@ -6,5 +6,10 @@
  */
 int print_rot13(char *s)
 {
-	return (*s);
+	int cont;
+	static int rot = 13;
+
+	while
+
+	return (cont);
 }
