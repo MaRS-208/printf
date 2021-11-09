@@ -28,7 +28,7 @@ int print_string(char *s)
 int printString(char *s)
 {
 	if (!s)
-		return (print_string("(nil)"));
+		return (print_string("(null)"));
 	if (*s == 0)
 	{
 		return (0);
