@@ -7,7 +7,7 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(char *s);
-int print_int(int n);
+int print_int(long int n);
 int print_bin(int *k);
 int print_uint(unsigned int n);
 int print_octal(int n);
