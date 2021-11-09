@@ -22,7 +22,7 @@ int select_f(char c, va_list *list)
 		case '%':
 			return (_putchar('%'));
 		case 'b':
-			return (int_to_bin(va_arg(*list, int)));
+			return (print_bin(va_arg(*list, int *)));
 		case 'u':
 			return (print_uint(va_arg(*list, unsigned int)));
 		case 'o':
