@@ -32,9 +32,9 @@ int select_f(char c, va_list *list)
 		case 'X':
 			return (print_uphex(va_arg(*list, int)));
 		case 'r':
-			return (print_reverse(va_arg(*list, int)));
+			return (print_reverse(va_arg(*list, char *)));
 		case 'R':
-			return (print_rot13(va_arg(*list, int)));
+			return (print_rot13(va_arg(*list, char *)));
 	}
 	return (0);
 }
@@ -48,6 +48,8 @@ int _printf(const char *format, ...)
 	int p, out = 0, flag = 0;
 	va_list list;
 
+	if (!format)
+		return (-1);
 	va_start(list, format);
 	for (p = 0; format[p]; p++)
 	{
