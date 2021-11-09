@@ -22,5 +22,5 @@ int print_reverse(char *s)
 		cont++;
 	}
 	_putchar('\n');
-	return (1 + cont);
+	return (cont);
 }
