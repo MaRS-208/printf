@@ -13,14 +13,17 @@ Given the prototype: int _printf(const char *format, ...);, it takes "format" as
 
 
 | Type   | Output |
-|--------|--------|
+| c      | Single character |
+| s      | String of characters |
 | d      | Decimal |
 | i      | Interger |
-| u      | Decimal integer	|
+| %      | A % followed by another % character will write a single % |
 | b      | Binary |
+| u      | Decimal integer |
 | o      | Octal |
 | x      | Hexadecimal integer (lowercase) |
 | X      | Hexadecimal integer (uppercase) |
-| c      | Single character |
-| s      | String of characters |
-| %      | A % followed by another % character will write a single % |
+| r      | Reverse |
+| R      | Rot13 |
+| S      |       | 
+
