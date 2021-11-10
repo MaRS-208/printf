@@ -1,0 +1,17 @@
+_printf Manual Page
+
+/ DESCRIPTION
+
+The _printf function writes output to stdout according to a format as described below.
+It writes the output under the control of a format string that specifies how subsequent arguments are converted for output.
+The arguments must correspond properly (after type promotion) with the conversion specifier.
+
+/ Conversion specifiers
+
+ The character % is followed by zero or more of the following flags:
+
+c	The argument is converted to an unsigned char, and the resulting character is written.
+s	Print a string. The const char * argument is expected to be a pointer to an array of character type (pointer to a string). The array must contain a terminating null byte.
+i	Print an integer.
+d	The int argument is converted to signed decimal notation and printed.
+%	Print the char '%'.
