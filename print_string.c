@@ -2,8 +2,8 @@
 
 /**
  * print_string - prints a string followed by a new line.
- * @s: pointer
- * Return: count
+ * @s: string
+ * Return: cont
  */
 int print_string(char *s)
 {
@@ -22,8 +22,8 @@ int print_string(char *s)
 
 /**
  * printString - print a string with a custom conversion specifie
- * @s: pointer
- * Return: count
+ * @s: string
+ * Return: cont
  **/
 int printString(char *s)
 {
@@ -43,7 +43,7 @@ int printString(char *s)
 /**
  * print_rot13 - prints rot13
  * @s: string
- * Return: s
+ * Return: cont
  **/
 int print_rot13(char *s)
 {
@@ -54,8 +54,6 @@ int print_rot13(char *s)
 
 	if (!s)
 		return (-1);
-	else if (*s == 0)
-		return (0);
 
 	for (i = 0; s[i]; i++)
 	{
