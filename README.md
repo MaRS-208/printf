@@ -26,7 +26,9 @@ Some of the functions are not yet finished, therefore, there are some cases in w
 | r      | Reverse |
 | R      | Rot13 |
 
- <p align="center">
+<p align="center">
  By Manuela Ríos Sosa and Guzmán Caraballo
+</p>
+ <p align="center">
 Deadline: Wednesday 10th, November 2021
  </p>
