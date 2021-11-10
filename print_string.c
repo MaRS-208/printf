@@ -48,57 +48,30 @@ int printString(char *s)
 int print_rot13(char *s)
 {
 	int cont = 0;
-	char z;
-	static int rot = 13;
+	unsigned int i, j;
+	char ent[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char sal[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	if (!s)
 		return (-1);
-	if (*s == 0)
+	else if (*s == 0)
 		return (0);
-	else if (*s >= 'A' && *s <= 'Z')
-	{
-		if (*s + rot <= 'Z')
-		{
-			z = *s;
-			csupport(z, cont);
-		}
-		else
-		{
-			z = *s - rot;
-			csupport(z, cont);
-		}
-	}
-	else if (*s >= 'a' && *s <= 'z')
-	{
-		if (*s + rot <= 'z')
-		{
-			z = *s;
-			csupport(z, cont);
-		}
-		else
-		{
-			z = *s - rot;
-			csupport(z, cont);
-		}
-	}
-	else
-	{
-		z = *s;
-		csupport(z, cont);
-	}
-	return (cont);
-}
 
-/**
- * csupport - and putchar
- * @z: char to print
- * @cont: counter
- * Return: cont
- **/
-int csupport(char z, int cont)
-{
-	_putchar(z);
-	cont++;
-
+	for (i = 0; s[i]; i++)
+	{
+		for (j = 0; ent[j]; j++)
+		{
+			if (ent[j] == s[i])
+			{
+				_putchar(sal[j]);
+				cont++;
+			}
+			else if (!ent[j])
+			{
+				_putchar(s[i]);
+				cont++;
+			}
+		}
+	}
 	return (cont);
 }
