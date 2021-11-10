@@ -25,5 +25,4 @@ Given the prototype: int _printf(const char *format, ...);, it takes "format" as
 | X      | Hexadecimal integer (uppercase) |
 | r      | Reverse |
 | R      | Rot13 |
-| S      |       | 
 
