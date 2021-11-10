@@ -12,13 +12,13 @@ Given the prototype: int _printf(const char *format, ...);, it takes "format" as
 <h2 Supported Types</h2>
 
 Type	Output
-*d / i	Decimal integer
-*u	Decimal integer
-*b	Binary
-*o	Octal
-*x	Hexadecimal integer (lowercase)
-*X	Hexadecimal integer (uppercase)
-*c	Single character
-*s	String of characters
-*%	A % followed by another % character will write a single %
+* d / i	Decimal integer
+* u	Decimal integer
+* b	Binary
+* o	Octal
+* x	Hexadecimal integer (lowercase)
+* X	Hexadecimal integer (uppercase)
+* c	Single character
+* s	String of characters
+* %	A % followed by another % character will write a single %
 
