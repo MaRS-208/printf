@@ -26,8 +26,7 @@ Some of the functions are not yet finished, therefore, there are some cases in w
 | r      | Reverse |
 | R      | Rot13 |
 
-</div>
-<!-- ABOUT -->
+***
 
 <p align="center">
  By Manuela Ríos Sosa and Guzmán Caraballo
