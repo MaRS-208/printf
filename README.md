@@ -1,13 +1,12 @@
 <h1 align="center">Printf</h1>
- <p align="center">
-    By Manuela Ríos Sosa and Guzmán Caraballo
- </p>
 </div>
 <!-- ABOUT -->
 
 This project's objective is to make a function that performs as the original printf function would.
 
-Given the prototype: int _printf(const char *format, ...);, it takes "format" as input, it goes through the values of "format" in order to print them and returns the amount of characters it prints.
+Given the prototype: int _printf(const char *format, ...);, it takes "format" as input and checks it's existence, in case there's an error it prints "-1"; if there isn't it searches through the values of "format" in order to find the "%" marker that leads to a determined fnction, it prints the returned value and returns the amount of characters it prints.
+
+Some of the functions are not yet finished, therefore, there are some cases in which it doesn't completetly work. Still, the prototypes are there and can be used when the functions are completed.
 
 ###  Supported Types
 
@@ -27,3 +26,7 @@ Given the prototype: int _printf(const char *format, ...);, it takes "format" as
 | r      | Reverse |
 | R      | Rot13 |
 
+ <p align="center">
+ By Manuela Ríos Sosa and Guzmán Caraballo
+Deadline: Wednesday 10th, November 2021
+ </p>
