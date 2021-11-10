@@ -13,6 +13,7 @@ Given the prototype: int _printf(const char *format, ...);, it takes "format" as
 
 
 | Type   | Output |
+|--------|--------|
 | c      | Single character |
 | s      | String of characters |
 | d      | Decimal |
