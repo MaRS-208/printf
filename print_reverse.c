@@ -9,20 +9,20 @@
 int print_reverse(char *s)
 {
 	int i, cont;
-	char *z;
 
 	i = 0;
 	cont = 0;
 
-	z = s;
-	if (!z)
-		z = "(null)";
+	if (!s)
+		s = "(null)";
 
-	while (*(z + i) != 0)
+	while (*(s + i) != 0)
 		i++;
-	for (i -= 1; i >= 0; i--)
+
+	i = i - 1;
+	for (; i >= 0; i--)
 	{
-		_putchar (*(z + i));
+		_putchar (*(s + i));
 		cont++;
 	}
 	return (cont);
