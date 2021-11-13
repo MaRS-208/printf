@@ -9,18 +9,21 @@
 int print_reverse(char *s)
 {
 	int i, cont;
+	char *z;
 
 	i = 0;
 	cont = 0;
 
-	while (*(s + i) != 0)
+	z = s;
+	if (!z)
+		z = "(null)";
+
+	while (*(z + i) != 0)
 		i++;
-	while (i)
+	for (i -= 1; i >= 0; i--)
 	{
-		i--;
-		_putchar (*(s + i));
+		_putchar (*(z + i));
 		cont++;
 	}
-	_putchar('\n');
 	return (cont);
 }
